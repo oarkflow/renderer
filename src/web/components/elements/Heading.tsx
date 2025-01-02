@@ -29,8 +29,7 @@ const Heading: React.FC<HeadingProps> = ({
   };
 
   const Component = tag;
-  const combinedClasses =
-    "" + align + letterSpacing + lineHeight + textTransform + tailwindClass;
+  const combinedClasses = `${align} ${letterSpacing} ${lineHeight} ${textTransform} ${tailwindClass}`
   const [resolvedContent, setResolvedContent] = useState<string | null>(null);
   useEffect(() => {
     const resolveContent = async () => {
