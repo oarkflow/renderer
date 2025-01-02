@@ -11,6 +11,7 @@
   "dependencies": {
     "@measured/puck": "^0.17.1",
     "@radix-ui/react-dialog": "^1.1.4",
+    "@orgwarec/render-config":"1.0.7",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-select": "^2.1.4",
     "@radix-ui/react-slot": "^1.0.2",
