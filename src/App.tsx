@@ -1,6 +1,7 @@
+import WebBuilder from "@/web/WebBuilder";
 
 function App() {
-  return <div>hello</div>;
+  return <WebBuilder/>;
 }
 
 export default App;
