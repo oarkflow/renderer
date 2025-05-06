@@ -7,9 +7,12 @@
     <title>Vite + React + TS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      const data = {{.json_data}}
-      localStorage.setItem("json_data", JSON.stringify(data))
-      console.log(data)
+      try {
+        const data = JSON.parse(`{{.json_data}}`)
+        localStorage.setItem("json_data", JSON.stringify(data))
+      } catch (e) {
+        console.log(e)
+      }
     </script>
   </head>
   <body>
